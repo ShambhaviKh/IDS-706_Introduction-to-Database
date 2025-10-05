@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# IDS-706_Introduction-to-Database
-=======
 # Data Storage and Management — Assignment 1
 
 ## Project Overview
@@ -101,4 +98,3 @@ Notes
 All operations were executed using the Python sqlite3 module to automate query execution and output verification.
 SQL statements can also be executed directly in SQLite CLI if desired.
 Outputs from Python can be copied to the README or used for further documentation.
->>>>>>> a3dee2c (Intial commit)
