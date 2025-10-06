@@ -21,6 +21,9 @@ The project uses both SQL and Python for database interaction and printing outpu
 * [Requirements to run the code](#How-to-Run)
 * [Results](#Results-and-Outputs)
 
+## Dataset
+
+The dataset contains global university ranking data from 2012 to 2015. Here is the link for the datset- https://drive.google.com/file/d/1hEXaWbL4XKRp-NvVjqRUCfPfA-Zs_Qug/view
 
 ## SQLite Setup and Verification
 
@@ -28,14 +31,17 @@ Before running queries, the environment was set up and verified:
 
 1. **Checked SQLite installation** to ensure the system can run database queries:
 
-bash
+```bash
 sqlite3 --version
+```
 
 2. Verified database connection in Python to confirm the database file is accessible and ready for queries.
 
+```python
 import sqlite3
 conn = sqlite3.connect("university_database.db")
 cursor = conn.cursor()
+```
 
 ---
 
@@ -95,13 +101,13 @@ SELECT queries will display outputs in the terminal for verification.
 Outputs for SQL queries-
 ![SQL Outputs](images_outputs/SQL_o:p1.png)
 
-![SQL Outputs]((images_outputs/SQL_o:p2.png))
+![SQL Outputs](images_outputs/SQL_o:p2.png)
 
-![SQL Outputs]((images_outputs/SQL_o:p3.png))
+![SQL Outputs](images_outputs/SQL_o:p3.png)
 
-![SQL Outputs]((images_outputs/SQL_o:p4.png))
+![SQL Outputs](images_outputs/SQL_o:p4.png)
 
-![SQL Outputs]((images_outputs/SQL_o:p5.png))
+![SQL Outputs](images_outputs/SQL_o:p5.png)
 
 Outputs for SQL queries run in Python environment-
 
