@@ -16,7 +16,7 @@ The project uses both SQL and Python for database interaction and printing outpu
 * [Dataset](#dataset)
 * [CLI](#SQLite-Setup-and-Verification)
 * [Use of two different methods to perform operations](#Why-Python-Was-Used-Along-With-SQL-Environment)
-* [Functions and Operations](#Functions-/-Operations-in-the-Script)
+* [Functions and Operations](#Functions-and-Operations-in-the-Script)
 * [Summary of Operations](#Summary-of-Operations-Performed)
 * [Requirements to run the code](#How-to-Run)
 * [Results](#Results-and-Outputs)
@@ -55,7 +55,7 @@ Python was chosen because:
 - It provides a reproducible workflow for future modifications.  
 
 ---
-### Functions / Operations in the Script
+### Functions and Operations in the Script
 
 1. **Database Connection** – Connects to the SQLite database.  
 2. **Check Table Schema** – Lists all columns and their data types in the university rankings table.  
