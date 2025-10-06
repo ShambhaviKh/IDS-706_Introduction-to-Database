@@ -8,18 +8,38 @@ This project demonstrates basic operations with SQLite using the University Rank
 2. Perform CRUD (Create, Read, Update, Delete) operations.  
 3. Document all steps and results.  
 
-The project uses Python for database interaction and printing outputs, providing a clear and reproducible workflow.
+The project uses both SQL and Python for database interaction and printing outputs, providing a clear and reproducible workflow.
 
 ---
+## Table of Contents
+
+* [Dataset](#dataset)
+* [CLI](#SQLite-Setup-and-Verification)
+* [Use of two different methods to perform operations](#Why-Python-Was-Used-Along-With-SQL-Environment)
+* [Functions and Operations](#Functions-/-Operations-in-the-Script)
+* [Summary of Operations](#Summary-of-Operations-Performed)
+* [Requirements to run the code](#How-to-Run)
+* [Results](#Results-and-Outputs)
+
 
 ## SQLite Setup and Verification
 
-1. Checked SQLite installation to ensure the system can run database queries.  
+Before running queries, the environment was set up and verified:
+
+1. **Checked SQLite installation** to ensure the system can run database queries:
+
+bash
+sqlite3 --version
+
 2. Verified database connection in Python to confirm the database file is accessible and ready for queries.
+
+import sqlite3
+conn = sqlite3.connect("university_database.db")
+cursor = conn.cursor()
 
 ---
 
-## Why Python Was Used
+## Why Python Was Used Along With SQL Environment
 
 Python was chosen because:
 
@@ -29,11 +49,6 @@ Python was chosen because:
 - It provides a reproducible workflow for future modifications.  
 
 ---
-
-## Python Script: `university_crud.py`
-
-The script performs both data exploration and CRUD operations on the database.
-
 ### Functions / Operations in the Script
 
 1. **Database Connection** – Connects to the SQLite database.  
@@ -50,23 +65,6 @@ The script performs both data exploration and CRUD operations on the database.
 
 ---
 
-## How to Run
-
-1. Ensure SQLite is installed.  
-2. Place `university_database.db` and `university_crud.py` in the same folder.  
-3. Run the Python script from the terminal.  
-4. Observe the outputs for dataset preview, summary statistics, and verification of insert, update, and delete operations.  
-
----
-
-## Files in Repository
-
-- `university_database.db` — SQLite database file  
-- `university_crud.py` — Python script with all queries and operations  
-- `README.md` — Project documentation  
-
----
-
 ## Summary of Operations Performed
 
 | Operation  | Description                                               |
@@ -75,11 +73,46 @@ The script performs both data exploration and CRUD operations on the database.
 | SELECT     | Counted Japanese universities in top 200 (2013)          |
 | UPDATE     | Increased University of Oxford 2014 score by 1.2         |
 | DELETE     | Removed 2015 universities with score < 45                |
-| DATA CHECK | Previewed first 15 rows, summary statistics, top universities by score |
+| DATA ANALYSIS | Previewed first 15 rows, summary statistics, top universities by score |
 
 ---
+## How to Run
+
+1. Ensure SQLite is installed and check its version.  
+2. Place `university_database.db', `script.py` and 'script.sql' in the same folder.  
+3. Run the Python script from the terminal.  
+4. Run the SQL script using SQLite -
+Open terminal and navigate to the folder containing university_database.db and the script, Execute the SQL file:
+```sql
+    sqlite3 university_database.db < script.sql 
+```
+SELECT queries will display outputs in the terminal for verification.
+
+5. Observe the outputs for dataset preview, summary statistics, and verification of insert, update, and delete operations.
+
+## Results and Outputs
+
+Outputs for SQL queries-
+![SQL Outputs](images_outputs/SQL_o:p1.png)
+
+![SQL Outputs]((images_outputs/SQL_o:p2.png))
+
+![SQL Outputs]((images_outputs/SQL_o:p3.png))
+
+![SQL Outputs]((images_outputs/SQL_o:p4.png))
+
+![SQL Outputs]((images_outputs/SQL_o:p5.png))
+
+Outputs for SQL queries run in Python environment-
+
+![Python Outputs](images_outputs/Python_o:p1.png)
+
+![Python Outputs](images_outputs/Python_o:p2.png)
+
+![Python Outputs](images_outputs/Python_o:p3.png)
+
 
 ## Notes
+- SQL statements were executed directly in the SQLite CLI.  
+- All operations were also executed using Python's sqlite3 module to automate query execution and output verification.  
 
-- All operations were executed using Python's sqlite3 module to automate query execution and output verification.  
-- SQL statements also executed directly in the SQLite CLI.  
