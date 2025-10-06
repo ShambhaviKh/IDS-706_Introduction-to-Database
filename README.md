@@ -1,4 +1,4 @@
-# Data Storage and Management — Assignment 1
+# Basic Data Storage and Management 
 
 ## Project Overview
 
@@ -23,7 +23,7 @@ The project uses both SQL and Python for database interaction and printing outpu
 
 ## Dataset
 
-The dataset contains global university ranking data from 2012 to 2015. Here is the link for the datset- https://drive.google.com/file/d/1hEXaWbL4XKRp-NvVjqRUCfPfA-Zs_Qug/view
+The dataset contains global university ranking data from 2012 to 2015. Here is the link for the dataset- https://drive.google.com/file/d/1hEXaWbL4XKRp-NvVjqRUCfPfA-Zs_Qug/view
 
 ## SQLite Setup and Verification
 
