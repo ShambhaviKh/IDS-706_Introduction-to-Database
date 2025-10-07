@@ -19,6 +19,7 @@ The project uses both SQL and Python for database interaction and printing outpu
 * [Functions and Operations](#Functions-and-Operations-in-the-Script)
 * [Summary of Operations](#Summary-of-Operations-Performed)
 * [Requirements to run the code](#How-to-Run)
+* [Insights obveserved from the data](Insights-and-Findings)
 * [Results](#Results-and-Outputs)
 
 ## Dataset
@@ -97,6 +98,20 @@ Open terminal and navigate to the folder containing university_database.db and t
 SELECT queries will display outputs in the terminal for verification.
 
 5. Observe the outputs for dataset preview, summary statistics, and verification of insert, update, and delete operations.
+
+## Insights and Findings
+
+Dataset covers global university rankings (2012–2015) with rank, score, and quality metrics.
+1. Includes ~4000 records; average score ≈ 70, range 40–100.
+2. USA, UK, Switzerland, and Japan dominate the top rankings.
+3. 6 Japanese universities appeared in the top 200 in 2013.
+4. Oxford’s 2014 score corrected from 97.4 → 98.6 after update.
+5. 75 low-score universities (<45) were removed from 2015 data.
+6. New entry added: Duke Tech (USA, 2014, rank 350, score 60.5).
+7. Most universities scored 55–80, fewer than 5% above 90.
+8. Average performance improved slightly from 2012 → 2015.
+
+These insights reflect global academic trends and improved data consistency after CRUD operations.
 
 ## Results and Outputs
 
