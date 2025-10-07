@@ -19,7 +19,7 @@ The project uses both SQL and Python for database interaction and printing outpu
 * [Functions and Operations](#Functions-and-Operations-in-the-Script)
 * [Summary of Operations](#Summary-of-Operations-Performed)
 * [Requirements to run the code](#How-to-Run)
-* [Insights obveserved from the data](Insights-and-Findings)
+* [Insights observed from the data](#Insights-and-Findings)
 * [Results](#Results-and-Outputs)
 
 ## Dataset
