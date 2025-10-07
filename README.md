@@ -35,6 +35,8 @@ Before running queries, the environment was set up and verified:
 sqlite3 --version
 ```
 
+![Sqlite](images_outputs/sqlite.png)
+
 2. Verified database connection in Python to confirm the database file is accessible and ready for queries.
 
 ```python
